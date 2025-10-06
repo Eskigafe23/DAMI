@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E6E6E6">
+
+        <!-- Fondo difuminado flotante -->
+        <LinearLayout
+            android:id="@+id/cardGracias"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:elevation="8dp"
+            android:gravity="center_horizontal">
+
+            <!-- Ícono animado de check -->
+
+            <!-- Título principal -->
+            <ImageView
+                android:id="@+id/iconoCheck"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/ic_check" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¡Gracias por tu compra!"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Subtítulo -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tu pedido ha sido procesado con éxito."
+                android:textSize="16sp"
+                android:textColor="#666666"
+                android:gravity="center"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Botón para volver -->
+            <Button
+                android:id="@+id/btnVolverInicio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FDCB6E"
+                android:text="Volver al inicio"
+                android:textColor="#FFFFFF"
+                android:paddingHorizontal="24dp"
+                android:paddingVertical="10dp"
+                android:layout_marginBottom="8dp"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
